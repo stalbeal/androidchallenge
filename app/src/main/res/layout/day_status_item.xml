@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/daily_status_margin">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sat"
+        android:textSize="@dimen/normal_text_size"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/iv_temperature_icon"
+        android:layout_width="@dimen/ic_temperature_daily_size"
+        android:layout_height="@dimen/ic_temperature_daily_size"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_cloud"
+        android:tint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium_text_size"
+        android:text="12°"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
