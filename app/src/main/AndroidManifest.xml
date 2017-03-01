@@ -2,15 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.knomatic.weather">
 
+    <!-- permission -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- permission -->
+
     <application
+        android:name=".applications.WeatherApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_3"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false">
         <activity
             android:name=".presentation.WeatherActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
