@@ -4,6 +4,7 @@ import android.zetterstrom.com.forecast.ForecastClient;
 import android.zetterstrom.com.forecast.models.Forecast;
 
 import com.knomatic.weather.applications.WeatherApplication;
+import com.knomatic.weather.models.events.ErrorEvent;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,13 +44,14 @@ public class ForecastHelper {
                 if (response.isSuccessful()) {
                     WeatherApplication.getInstance().getBus().post(response.body());
                 } else {
-                    //iForecastCallback.onForecastError();
+                    WeatherApplication.getInstance().getBus().post(new ErrorEvent(Constants.GENERIC_ERROR));
                 }
             }
 
             @Override
             public void onFailure(Call<Forecast> forecastCall, Throwable t) {
-                // iForecastCallback.onForecastError();
+                WeatherApplication.getInstance().getBus().post(new ErrorEvent(Constants.GENERIC_ERROR));
+
             }
         });
     }
