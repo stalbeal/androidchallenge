@@ -37,15 +37,28 @@ Your time is valuable and we understand that.  Our goal is for you to spend abou
 -   Defensive programming   (App shouldn't crash if GPS or network is off)
 
 ## Bonus Points
--  Some working unit tests!  
+-  Some working unit tests!  
 
 ## Questions to Answer
 Please answer the following in about a paragraph.
 
-1.  How long did you spend on completing this challenge?
-2.  How far were you at 3 hours?
-3.  What needs to be finished/fixed for this to be use in a production app?
-4.  What did you think of this challenge?
-5.  What part was unclear?
-6.  What could we do to make this challenge better?
-7.  What did we forget to test you on?
+1.  How long did you spend on completing this challenge?<br>
+I took me around 16 hours for completing the challenge<br>
+
+2.  How far were you at 3 hours?<br>
+On 3 hours I had the  views in fragments, holder and recyclerview for display the weather status in days (just portrait), the connection with the services through the Forecast library, the connection was successful and received through the Otto's bus library in the activity, and also the permissions verification. <br>
+
+3.  What needs to be finished/fixed for this to be use in a production app?<br>
+I think that a button action or something like that, to refresh and get the info again in the cases  when the user don't have any internet connection or the gps enabled or just  to refresh the info, also data persistence and testing. <br>
+    
+4.  What did you think of this challenge?<br>
+I liked, I think it is  a simple app, easy to do.<br>
+
+5.  What part was unclear?<br>
+I think that all was clear<br>
+
+6.  What could we do to make this challenge better?<br>
+I would add a view to show the  weather detail<br>
+
+7.  What did we forget to test you on?<br>
+Database access<br>
